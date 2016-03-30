@@ -18,3 +18,8 @@ gem 'bootstrap-sass', '~> 3.2.0.2'
 group :development do
   gem 'spring'
 end
+group :production do
+  gem 'pg'
+	gem 'rails_12factor', '~> 0.0.3'
+	gem 'puma'
+end
