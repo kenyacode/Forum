@@ -1,6 +1,9 @@
 #post_content
 	%h1= @post.title
 	%p= @post.content
+	%p.post_author
+		Posted by
+		= @post.user.email
 
 	#comments
 		%h2
