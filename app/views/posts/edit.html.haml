@@ -1,5 +1,10 @@
-%h1 Edit Post
+.col-md-6.col-md-offset-3
+	.row
+		.panel.panel-default
+			.panel-heading
+				.panel-title
+					%h1 Edit Post
+			.panel-body
+				= render 'form'
 
-= render 'form'
-
-= link_to "Cancel", post_path
+				= link_to "Cancel", post_path

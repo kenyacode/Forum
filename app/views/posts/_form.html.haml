@@ -1,4 +1,8 @@
-= simple_form_for @post do |f|
-	= f.input :title
-	= f.input :content
-	= f.submit
+= simple_form_for @post, html: { multipart: true } do |f|
+	.form-group
+		= f.input :title
+	.form-group
+		= f.input :content
+	.form-group
+		.btn.btn-default
+			= f.submit
